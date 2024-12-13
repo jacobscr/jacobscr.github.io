@@ -1,6 +1,22 @@
+import { createApp } from 'vue'
+import { MotionPlugin } from '@vueuse/motion'
+import App from './App.vue'
 import './assets/main.css'
 
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createMemoryHistory, createRouter } from 'vue-router'
 
-createApp(App).mount('#app')
+import HomeView from '../src/views/HomeView.vue'
+
+const routes = [
+    { path: '/', component: HomeView },
+]
+
+const router = createRouter({
+    history: createMemoryHistory(),
+    routes,
+})
+
+const app = createApp(App)
+app.use(router)
+app.use(MotionPlugin)
+app.mount('#app')
