@@ -156,6 +156,7 @@
 </template>
 
 <script setup>
+// Imports
 import { ref, onMounted, onUnmounted } from 'vue'
 import { useMotion } from '@vueuse/motion'
 import { useMouseInElement } from '@vueuse/core'
