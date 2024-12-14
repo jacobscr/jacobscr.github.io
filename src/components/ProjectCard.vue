@@ -8,7 +8,7 @@
         class="relative group overflow-hidden rounded-2xl border border-neutral-800 aspect-video"
     >
       <img
-          :src="data.image"
+          :src="`/images/${data.image}`"
           :alt="data.title"
           class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
       />

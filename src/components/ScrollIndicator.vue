@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col items-center space-y-2">
     <span class="text-sm text-neutral-500">Scroll</span>
-    <div class="w-5 h-9 rounded-full border-2 border-neutral-700 flex items-start p-1">
+    <div class="w-5 h-9 rounded-full border-2 border-neutral-700 flex items-start justify-center p-1">
       <div class="w-1 h-1 bg-teal-400 rounded-full animate-scroll"></div>
     </div>
   </div>

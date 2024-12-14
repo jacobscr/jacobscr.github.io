@@ -12,7 +12,7 @@ export function useNavigation() {
 
     const scrollToSection = (sectionId) => {
         const element = document.getElementById(sectionId)
-        const offset = 100 // Navbar height + padding
+        const offset = 0 // Navbar height + padding
         const elementPosition = element.getBoundingClientRect().top
         const offsetPosition = elementPosition + window.pageYOffset - offset
 

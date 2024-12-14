@@ -2,12 +2,12 @@ export function useProjects() {
     const projects = [
         {
             id: 1,
-            title: 'KI-gestützte E-Learning Plattform',
-            description: 'Eine moderne Lernplattform mit adaptiven Lernpfaden, die KI nutzt, um personalisierte Lernerfahrungen zu schaffen. Das System analysiert das Lernverhalten und passt Inhalte dynamisch an.',
-            image: '/api/placeholder/800/600',
-            technologies: ['Vue.js', 'Python', 'TensorFlow', 'PostgreSQL', 'Docker'],
+            title: 'Planning Poker für agiles Projektmanagement',
+            description: 'Das Projekt Planning Poker ist eine digitale Lösung zur agilen Aufwandsschätzung, die im Rahmen eines Schulprojekts an der HTL Rennweg entwickelt wurde, mit Fokus auf Benutzerfreundlichkeit und Scrum-Prinzipien.',
+            image: 'plapo.png',
+            technologies: ['Nuxt.js', 'Spring Boot', 'Tailwind', 'Restful API', 'SQLite'],
             demoUrl: 'https://elearning.example.com',
-            githubUrl: 'https://github.com/example/elearning',
+            githubUrl: 'https://github.com/1FailX1/Planning-Poker',
             highlights: [
                 'Microservices-Architektur mit Spring Boot',
                 'Real-time Kollaboration via WebSockets',
@@ -19,12 +19,12 @@ export function useProjects() {
         },
         {
             id: 2,
-            title: 'Enterprise Resource Management System',
+            title: 'Unlock the Enigma - Eine digitale Schnitzeljagd',
             description: 'Ein umfassendes ERP-System für mittelständische Unternehmen mit Modulen für Personalwesen, Lagerverwaltung und Buchhaltung. Besonderer Fokus lag auf der Benutzerfreundlichkeit und Systemintegration.',
-            image: '/api/placeholder/800/600',
-            technologies: ['Nuxt.js', 'Spring Framework', 'Oracle DB', 'Redis', 'Kubernetes'],
+            image: 'enigma.png',
+            technologies: ['Symfony', 'Twig', 'JavaScript', 'Tailwind'],
             demoUrl: 'https://erp.example.com',
-            githubUrl: 'https://github.com/example/erp',
+            githubUrl: 'https://github.com/TimonAME/UnlockTheEnigma',
             highlights: [
                 'Modulare Frontend-Architektur',
                 'OAuth2 Integration',
@@ -39,7 +39,7 @@ export function useProjects() {
             title: 'IoT Dashboard & Analytics',
             description: 'Ein skalierbares Dashboard für IoT-Geräte mit Echtzeit-Datenvisualisierung und prädiktiver Wartung. Verarbeitet Daten von tausenden Sensoren in Echtzeit.',
             image: '/api/placeholder/800/600',
-            technologies: ['Vue.js', 'Node.js', 'InfluxDB', 'MQTT', 'AWS'],
+            technologies: ['Symfony', 'Twig', 'JavaScript', 'Tailwind', 'SQLite'],
             demoUrl: 'https://iot.example.com',
             githubUrl: 'https://github.com/example/iot-dashboard',
             highlights: [

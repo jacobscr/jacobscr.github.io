@@ -21,42 +21,45 @@
     <section class="min-h-screen flex items-center justify-center relative pt-20">
       <canvas ref="webglCanvas" class="absolute inset-0 z-0" />
       <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
-        <motion-text
-            initial="hidden"
-            :variants="fadeInUp"
+        <!-- Initial versteckt durch style -->
+        <div
+            ref="roleText"
             class="text-sm font-medium tracking-wider text-teal-400 mb-4"
+            style="transform: translateY(20px); opacity: 0;"
         >
           FULLSTACK ENTWICKLER
-        </motion-text>
+        </div>
 
-        <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-neutral-100 to-neutral-400 bg-clip-text text-transparent">
-          <motion-text
-              :variants="textContainer"
-              initial="hidden"
-              class="inline-block"
-          >
-            Jacob Schrott
-          </motion-text>
+        <h1
+            ref="nameText"
+            class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-neutral-100 to-neutral-400 bg-clip-text text-transparent"
+            style="transform: translateY(20px); opacity: 0;"
+        >
+          Jacob Schrott
         </h1>
 
-        <p class="text-lg md:text-xl text-neutral-400 max-w-2xl mx-auto mb-8">
-          <motion-text :variants="fadeInUp">
-            Ich entwickle elegante Lösungen an der Schnittstelle von Design und Technologie.
-          </motion-text>
+        <p
+            ref="descText"
+            class="text-lg md:text-xl text-neutral-400 max-w-2xl mx-auto mb-8"
+            style="transform: translateY(20px); opacity: 0;"
+        >
+          Ich entwickle elegante Lösungen an der Schnittstelle von Design und Technologie.
         </p>
 
-        <motion-text :variants="fadeInUp">
-          <div class="flex flex-wrap justify-center gap-4">
-            <primary-button @click="navigation.scrollToSection('projects')">
-              <code-icon class="w-5 h-5 mr-2" />
-              Projekte erkunden
-            </primary-button>
-            <secondary-button @click="navigation.scrollToSection('contact')">
-              <mail-icon class="w-5 h-5 mr-2" />
-              Kontakt
-            </secondary-button>
-          </div>
-        </motion-text>
+        <div
+            ref="buttonContainer"
+            class="flex flex-wrap justify-center gap-4"
+            style="transform: translateY(20px); opacity: 0;"
+        >
+          <primary-button @click="navigation.scrollToSection('projects')">
+            <code-icon class="w-5 h-5 mr-2" />
+            Projekte erkunden
+          </primary-button>
+          <secondary-button @click="navigation.scrollToSection('contact')">
+            <mail-icon class="w-5 h-5 mr-2" />
+            Kontakt
+          </secondary-button>
+        </div>
 
         <scroll-indicator class="mt-12" />
       </div>
@@ -158,6 +161,7 @@
 <script setup>
 // Imports
 import { ref, onMounted, onUnmounted } from 'vue'
+import { gsap } from 'gsap'
 import { useMotion } from '@vueuse/motion'
 import { useMouseInElement } from '@vueuse/core'
 import { useIntersectionObserver } from '@vueuse/core'
@@ -217,6 +221,10 @@ const textContainer = {
 // Template Refs
 const webglCanvas = ref(null)
 const cursor = ref(null)
+const roleText = ref(null)
+const nameText = ref(null)
+const descText = ref(null)
+const buttonContainer = ref(null)
 
 // Composables
 const navigation = useNavigation()
@@ -229,6 +237,19 @@ const { initWebGL, destroyWebGL } = useWebGL()
 // Lifecycle Hooks
 onMounted(() => {
   initWebGL(webglCanvas.value)
+  const tl = gsap.timeline({
+    defaults: {
+      duration: 1,
+      ease: "power3.out"
+    }
+  })
+
+  tl.to([roleText.value, nameText.value, descText.value, buttonContainer.value], {
+    y: 0,
+    opacity: 1,
+    stagger: 0.15,
+    clearProps: "all" // Wichtig: Entfernt inline styles nach der Animation
+  })
 })
 
 onUnmounted(() => {
