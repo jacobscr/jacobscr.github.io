@@ -33,7 +33,7 @@
           <ul class="space-y-2">
             <li>
               <a
-                  href="mailto:contact@jacob.schrott@htl.rennweg.at"
+                  href="mailto:jacob.schrott@htl.rennweg.at"
                   class="text-neutral-400 hover:text-teal-400 transition-colors duration-300 flex items-center"
               >
                 <mail-icon class="w-4 h-4 mr-2" />

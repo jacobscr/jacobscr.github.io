@@ -12,7 +12,6 @@
           :alt="data.title"
           class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
       />
-      <div class="absolute inset-0 bg-gradient-to-t from-[#0A0F1C] via-transparent to-transparent opacity-60"></div>
     </div>
 
     <!-- Project Info -->

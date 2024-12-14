@@ -136,17 +136,8 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-32 relative bg-[#0F1729]">
-      <div class="container mx-auto px-6">
-        <section-heading
-            title="Kontakt"
-            subtitle="Lass uns zusammenarbeiten"
-        />
-
-        <div class="max-w-2xl mx-auto mt-16">
-          <contact-form />
-        </div>
-      </div>
+    <section id="contact">
+      <contact-form />
     </section>
 
     <!-- Footer -->

@@ -1,121 +1,101 @@
-// components/contact/ContactForm.vue
 <template>
-  <form @submit.prevent="handleSubmit" class="space-y-6">
-    <div class="relative">
-      <input-field
-          v-model="form.name"
-          :error="errors.name"
-          label="Name"
-          placeholder="Dein Name"
-          required
+  <section id="contact" class="py-32 relative bg-[#0F1729]">
+    <div class="container mx-auto px-6">
+      <section-heading
+          title="Let's Connect"
+          subtitle="Lass uns zusammenarbeiten"
       />
-    </div>
 
-    <div class="relative">
-      <input-field
-          v-model="form.email"
-          :error="errors.email"
-          type="email"
-          label="Email"
-          placeholder="deine@email.com"
-          required
-      />
-    </div>
+      <div class="grid md:grid-cols-2 gap-16">
+        <!-- Linke Seite - Persönliche Note -->
+        <div class="space-y-8">
+          <h3 class="text-2xl font-bold bg-gradient-to-r from-neutral-100 to-neutral-400 bg-clip-text text-transparent">
+            Immer auf der Suche nach spannenden Projekten
+          </h3>
+          <p class="text-neutral-400 leading-relaxed">
+            Als HTL Medientechnik-Absolvent kombiniere ich technisches Know-how mit kreativem Design.
+            Ich suche stets nach Möglichkeiten, innovative Weblösungen zu entwickeln und
+            neue Technologien einzusetzen.
+          </p>
+          <div class="space-y-4">
+            <h4 class="text-lg font-medium text-teal-400">Aktuelle Interessen:</h4>
+            <div class="flex flex-wrap gap-3">
+              <span v-for="interest in currentInterests"
+                    :key="interest"
+                    class="px-4 py-2 bg-teal-500/10 rounded-full text-sm text-teal-300">
+                {{ interest }}
+              </span>
+            </div>
+          </div>
+        </div>
 
-    <div class="relative">
-      <text-area-field
-          v-model="form.message"
-          :error="errors.message"
-          label="Nachricht"
-          placeholder="Wie kann ich dir helfen?"
-          rows="4"
-          required
-      />
-    </div>
+        <!-- Rechte Seite - Connect Cards -->
+        <div class="grid gap-6">
+          <a href="mailto:jacob.schrott@htl.rennweg.at"
+             class="group p-6 bg-[#0A0F1C] rounded-xl border border-neutral-800 hover:border-teal-500/50 transition-all duration-300">
+            <div class="flex items-center space-x-4">
+              <div class="p-3 bg-teal-500/10 rounded-lg group-hover:bg-teal-500/20 transition-colors duration-300">
+                <mail-icon class="w-6 h-6 text-teal-400" />
+              </div>
+              <div>
+                <h4 class="font-medium text-neutral-200">Email</h4>
+                <p class="text-sm text-neutral-400">jacob.schrott@htl.rennweg.at</p>
+              </div>
+            </div>
+          </a>
 
-    <div class="flex items-center justify-between">
-      <p class="text-sm text-neutral-500">
-        Alle Felder sind erforderlich
-      </p>
-      <button
-          type="submit"
-          :disabled="isSubmitting"
-          class="px-6 py-3 bg-gradient-to-r from-teal-500 to-blue-500 rounded-lg font-medium
-               disabled:opacity-50 disabled:cursor-not-allowed
-               hover:opacity-90 transform hover:scale-[1.02] transition-all duration-300"
-      >
-        <span v-if="!isSubmitting">Senden</span>
-        <loader-icon v-else class="w-5 h-5 animate-spin" />
-      </button>
+          <a href="https://github.com/jacobscr" target="_blank"
+             class="group p-6 bg-[#0A0F1C] rounded-xl border border-neutral-800 hover:border-teal-500/50 transition-all duration-300">
+            <div class="flex items-center space-x-4">
+              <div class="p-3 bg-teal-500/10 rounded-lg group-hover:bg-teal-500/20 transition-colors duration-300">
+                <github-icon class="w-6 h-6 text-teal-400" />
+              </div>
+              <div>
+                <h4 class="font-medium text-neutral-200">GitHub</h4>
+                <p class="text-sm text-neutral-400">Aktuelle Projekte & Code</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/jacob-schrott-754ba5341/" target="_blank"
+             class="group p-6 bg-[#0A0F1C] rounded-xl border border-neutral-800 hover:border-teal-500/50 transition-all duration-300">
+            <div class="flex items-center space-x-4">
+              <div class="p-3 bg-teal-500/10 rounded-lg group-hover:bg-teal-500/20 transition-colors duration-300">
+                <linkedin-icon class="w-6 h-6 text-teal-400" />
+              </div>
+              <div>
+                <h4 class="font-medium text-neutral-200">LinkedIn</h4>
+                <p class="text-sm text-neutral-400">Lass uns vernetzen</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Current Status -->
+      <div class="mt-16 p-6 bg-teal-500/5 rounded-xl border border-teal-500/10">
+        <div class="flex items-center space-x-3">
+          <div class="w-2 h-2 bg-teal-400 rounded-full animate-pulse"></div>
+          <span class="text-teal-400 font-medium">Aktueller Status:</span>
+          <span class="text-neutral-400">
+            Arbeite an meinem HTL-Abschlussprojekt und suche nach spannenden Berufseinstiegsmöglichkeiten
+          </span>
+        </div>
+      </div>
     </div>
-  </form>
+  </section>
 </template>
 
 <script setup>
-import { ref, reactive } from 'vue'
-import { LoaderIcon } from 'lucide-vue-next'
-import InputField from './InputField.vue'
-import TextAreaField from './TextAreaField.vue'
+import { MailIcon, GithubIcon, LinkedinIcon } from 'lucide-vue-next'
+import SectionHeading from "@/components/SectionHeading.vue";
 
-const form = reactive({
-  name: '',
-  email: '',
-  message: ''
-})
-
-const errors = reactive({
-  name: '',
-  email: '',
-  message: ''
-})
-
-const isSubmitting = ref(false)
-
-const validateForm = () => {
-  let isValid = true
-  errors.name = ''
-  errors.email = ''
-  errors.message = ''
-
-  if (!form.name.trim()) {
-    errors.name = 'Name ist erforderlich'
-    isValid = false
-  }
-
-  if (!form.email.trim()) {
-    errors.email = 'Email ist erforderlich'
-    isValid = false
-  } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) {
-    errors.email = 'Ungültige Email-Adresse'
-    isValid = false
-  }
-
-  if (!form.message.trim()) {
-    errors.message = 'Nachricht ist erforderlich'
-    isValid = false
-  }
-
-  return isValid
-}
-
-const handleSubmit = async () => {
-  if (!validateForm()) return
-
-  isSubmitting.value = true
-
-  try {
-    // Hier würde der API-Call erfolgen
-    await new Promise(resolve => setTimeout(resolve, 1500)) // Simulation
-
-    form.name = ''
-    form.email = ''
-    form.message = ''
-
-    alert('Danke für deine Nachricht! Ich werde mich bald bei dir melden.')
-  } catch (error) {
-    alert('Ein Fehler ist aufgetreten. Bitte versuche es später erneut.')
-  } finally {
-    isSubmitting.value = false
-  }
-}
+const currentInterests = [
+  'Web Animations',
+  'UI/UX Design',
+  'Vue.js/Nuxt',
+  '3D Web',
+  'Creative Coding',
+  'Media Production'
+]
 </script>
