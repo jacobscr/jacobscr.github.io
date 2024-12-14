@@ -33,20 +33,11 @@
           <ul class="space-y-2">
             <li>
               <a
-                  href="mailto:contact@jacobschrott.dev"
+                  href="mailto:contact@jacob.schrott@htl.rennweg.at"
                   class="text-neutral-400 hover:text-teal-400 transition-colors duration-300 flex items-center"
               >
                 <mail-icon class="w-4 h-4 mr-2" />
-                contact@jacobschrott.dev
-              </a>
-            </li>
-            <li>
-              <a
-                  href="tel:+43123456789"
-                  class="text-neutral-400 hover:text-teal-400 transition-colors duration-300 flex items-center"
-              >
-                <phone-icon class="w-4 h-4 mr-2" />
-                +43 123 456 789
+                jacob.schrott@htl.rennweg.at
               </a>
             </li>
           </ul>
@@ -93,23 +84,13 @@ const navigation = useNavigation()
 const socialLinks = [
   {
     name: 'GitHub',
-    url: 'https://github.com/jacobschrott',
+    url: 'https://github.com/jacobscr',
     icon: GithubIcon
   },
   {
     name: 'LinkedIn',
-    url: 'https://linkedin.com/in/jacobschrott',
+    url: 'https://www.linkedin.com/in/jacob-schrott-754ba5341/',
     icon: LinkedinIcon
   },
-  {
-    name: 'Twitter',
-    url: 'https://twitter.com/jacobschrott',
-    icon: TwitterIcon
-  },
-  {
-    name: 'Instagram',
-    url: 'https://instagram.com/jacobschrott',
-    icon: InstagramIcon
-  }
 ]
 </script>

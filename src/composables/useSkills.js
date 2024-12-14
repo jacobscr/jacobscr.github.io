@@ -1,75 +1,81 @@
 // composables/useSkills.js
 export function useSkills() {
     const categories = {
-        'Backend Development': [
+        'Frontend & Web Development': [
             {
-                name: 'Java & Spring',
-                experience: '3 Jahre Erfahrung',
-                description: 'Entwicklung skalierbarer Microservices und Enterprise-Anwendungen',
-                technologies: ['Spring Boot', 'Spring Security', 'JPA/Hibernate', 'JUnit', 'Maven'],
+                name: 'Modern Web Development',
+                experience: '5 Jahre HTL-Ausbildung',
+                description: 'Entwicklung moderner, responsiver Webanwendungen',
+                technologies: ['HTML5', 'CSS3', 'JavaScript', 'Vue.js', 'Tailwind CSS'],
                 highlights: [
-                    'Implementierung einer Microservice-Architektur für E-Commerce Platform',
-                    'Entwicklung RESTful APIs mit über 100k täglichen Anfragen',
-                    'Integration von OAuth2 und JWT-basierter Authentifizierung'
+                    'Single Page Applications mit Vue.js/Nuxt',
+                    'Responsive & Mobile-First Design',
+                    'Web Performance Optimierung',
+                    'Progressive Web Apps'
                 ]
             },
             {
-                name: 'PHP & Symfony',
-                experience: '2 Jahre Erfahrung',
-                description: 'Backend-Entwicklung für Webanwendungen und CMS',
-                technologies: ['Symfony', 'Doctrine', 'Composer', 'PHPUnit', 'MySQL'],
+                name: 'Web Design & UX',
+                experience: 'Medientechnische Ausbildung',
+                description: 'User Interface Design und User Experience Optimierung',
+                technologies: ['UI/UX Design', 'Figma', 'Adobe XD', 'CSS Animations'],
                 highlights: [
-                    'Custom CMS-Entwicklung für mehrere Unternehmenswebsites',
-                    'Implementation von Payment-Gateway Integrationen',
-                    'Optimierung der Datenbankperformance'
+                    'Benutzerfreundliche Interface-Gestaltung',
+                    'Barrierefreie Webentwicklung',
+                    'Design System Development',
+                    'Interaktive Prototypen'
                 ]
             }
         ],
-        'Frontend Development': [
+        'Backend & Datenbanken': [
             {
-                name: 'Vue.js Ecosystem',
-                experience: '3 Jahre Erfahrung',
-                description: 'Single Page Applications und Progressive Web Apps',
-                technologies: ['Vue 3', 'Nuxt.js', 'Vuex/Pinia', 'Vue Router', 'TypeScript'],
+                name: 'Backend Development',
+                experience: 'Fortgeschrittene Praxis',
+                description: 'Entwicklung skalierbarer Server-Anwendungen',
+                technologies: ['Java', 'Spring Boot', 'PHP', 'Symfony', 'RESTful APIs'],
                 highlights: [
-                    'Entwicklung einer PWA mit Offline-Funktionalität',
-                    'Implementation von Real-time Features mit WebSocket',
-                    'Performance-Optimierung durch Code-Splitting und Lazy Loading'
+                    'Microservices-Architektur',
+                    'API-Design und Entwicklung',
+                    'Authentifizierung & Autorisierung',
+                    'Server-Side Rendering'
                 ]
             },
             {
-                name: 'Modern Frontend Stack',
-                experience: '3 Jahre Erfahrung',
-                description: 'Moderne Webentwicklung mit Fokus auf Performance und UX',
-                technologies: ['JavaScript (ES6+)', 'TypeScript', 'Tailwind CSS', 'Webpack', 'Vite'],
+                name: 'Datenbanken & System-Integration',
+                experience: 'Praxiserfahrung',
+                description: 'Datenmodellierung und Systemintegration',
+                technologies: ['MySQL', 'PostgreSQL', 'Docker', 'Git', 'CI/CD'],
                 highlights: [
-                    'Entwicklung responsiver und barrierefreier Interfaces',
-                    'Implementation von CI/CD-Pipelines für Frontend-Deployments',
-                    'Optimierung von Core Web Vitals'
+                    'Datenbankdesign und -optimierung',
+                    'Container-Virtualisierung',
+                    'Versionskontrolle',
+                    'Automatisierte Deployments'
                 ]
             }
         ],
-        'DevOps & Tools': [
+        'Medientechnik & Design': [
             {
-                name: 'Container & Orchestrierung',
-                experience: '2 Jahre Erfahrung',
-                description: 'Container-basierte Entwicklung und Deployment',
-                technologies: ['Docker', 'Kubernetes', 'GitHub Actions', 'Jenkins', 'AWS'],
+                name: 'Medienproduktion',
+                experience: 'HTL Medientechnik',
+                description: 'Digitale Medienbearbeitung und -produktion',
+                technologies: ['Adobe Creative Suite', 'Video-Editing', 'Audio-Bearbeitung', '3D-Modellierung'],
                 highlights: [
-                    'Setup von Kubernetes-Clustern für Microservices',
-                    'Implementierung von Auto-Scaling Lösungen',
-                    'Monitoring und Logging mit ELK Stack'
+                    'Video Post-Production',
+                    'Audio-Nachbearbeitung',
+                    'Medienformate und Kodierung',
+                    'Grundlagen der 3D-Modellierung'
                 ]
             },
             {
-                name: 'Datenbanken & Caching',
-                experience: '3 Jahre Erfahrung',
-                description: 'Design und Optimierung von Datenbanklösungen',
-                technologies: ['PostgreSQL', 'Redis', 'MongoDB', 'Elasticsearch'],
+                name: 'CMS & Content Management',
+                experience: 'Praktische Erfahrung',
+                description: 'Content Management und Web Publishing',
+                technologies: ['WordPress', 'Headless CMS', 'SEO', 'Content Strategy'],
                 highlights: [
-                    'Datenbankdesign für hochskalierbare Anwendungen',
-                    'Implementation von Caching-Strategien',
-                    'Performance-Optimierung von Datenbankabfragen'
+                    'Theme & Plugin Entwicklung',
+                    'Content-Migration',
+                    'Suchmaschinenoptimierung',
+                    'Web Analytics'
                 ]
             }
         ]

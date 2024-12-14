@@ -1,6 +1,6 @@
 <template>
   <div class="text-lg text-neutral-400 leading-relaxed">
-    <div ref="typewriterElement" class="min-h-[200px]"></div>
+    <div ref="typewriterElement" class="h-full min-h-[100px]"></div>
   </div>
 </template>
 

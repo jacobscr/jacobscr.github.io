@@ -18,7 +18,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="min-h-screen flex items-center justify-center relative pt-20">
+    <section id="landing" class="min-h-screen flex items-center justify-center relative pt-20">
       <canvas ref="webglCanvas" class="absolute inset-0 z-0" />
       <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <!-- Initial versteckt durch style -->

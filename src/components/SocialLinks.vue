@@ -27,23 +27,13 @@ import {
 const socialLinks = [
   {
     name: 'GitHub',
-    url: 'https://github.com/jacobschrott',
+    url: 'https://github.com/jacobscr',
     icon: GithubIcon
   },
   {
     name: 'LinkedIn',
-    url: 'https://linkedin.com/in/jacobschrott',
+    url: 'https://www.linkedin.com/in/jacob-schrott-754ba5341/',
     icon: LinkedinIcon
   },
-  {
-    name: 'Twitter',
-    url: 'https://twitter.com/jacobschrott',
-    icon: TwitterIcon
-  },
-  {
-    name: 'Instagram',
-    url: 'https://instagram.com/jacobschrott',
-    icon: InstagramIcon
-  }
 ]
 </script>

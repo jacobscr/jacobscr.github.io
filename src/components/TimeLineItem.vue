@@ -22,7 +22,7 @@
       <p class="text-sm text-neutral-500">{{ data.description }}</p>
 
       <!-- Hover Effect -->
-      <div class="absolute -inset-2 bg-neutral-800/50 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      <div class="absolute -inset-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
     </div>
   </div>
 </template>
