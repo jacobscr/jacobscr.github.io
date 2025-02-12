@@ -6,9 +6,10 @@ import './assets/main.css'
 import { createMemoryHistory, createRouter } from 'vue-router'
 
 import HomeView from '../src/views/HomeView.vue'
+import ResumeView from '../src/views/ResumeView.vue'
 
 const routes = [
-    { path: '/', component: HomeView },
+    { path: '/', component: ResumeView },
 ]
 
 const router = createRouter({
