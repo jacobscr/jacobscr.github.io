@@ -2,7 +2,7 @@
   <div class="min-h-screen bg-neutral-50 py-8 print:p-0 print:bg-white">
     <div class="w-[21cm] h-[29.7cm] mx-auto bg-white shadow-lg relative print:shadow-none">
       <!-- Header -->
-      <header class="px-8 pt-8 pb-5 bg-gradient-to-r from-teal-50 to-blue-50">
+      <header class="px-8 pt-4 pb-5 bg-gradient-to-r from-teal-50 to-blue-50">
         <div class="flex justify-between">
           <div class="flex flex-col justify-between">
             <h1 class="text-3xl font-bold text-teal-600">Jacob Schrott</h1>
@@ -106,12 +106,12 @@
                         <div v-for="i in 5" :key="i"
                              class="w-2.5 h-2.5 rounded-full"
                              :class="{
-                               'bg-teal-200': i <= 4 && i === 1,
-                               'bg-teal-300': i <= 4 && i === 2,
-                               'bg-teal-400': i <= 4 && i === 3,
-                               'bg-teal-500': i <= 4 && i === 4,
-                               'bg-teal-600': i <= 4 && i === 5,
-                               'bg-neutral-200': i > 4
+                               'bg-teal-300': i <= 5 && i === 1,
+                               'bg-teal-400': i <= 5 && i === 2,
+                               'bg-teal-500': i <= 5 && i === 3,
+                               'bg-teal-600': i <= 5 && i === 4,
+                               'bg-teal-700': i <= 5 && i === 5,
+                               'bg-neutral-200': i > 5
                              }">
                         </div>
                       </div>
@@ -124,11 +124,11 @@
                         <div v-for="i in 5" :key="i"
                              class="w-2.5 h-2.5 rounded-full"
                              :class="{
-                               'bg-teal-200': i <= 4 && i === 1,
-                               'bg-teal-300': i <= 4 && i === 2,
-                               'bg-teal-400': i <= 4 && i === 3,
-                               'bg-teal-500': i <= 4 && i === 4,
-                               'bg-teal-600': i <= 4 && i === 5,
+                               'bg-teal-300': i <= 4 && i === 1,
+                               'bg-teal-400': i <= 4 && i === 2,
+                               'bg-teal-500': i <= 4 && i === 3,
+                               'bg-teal-600': i <= 4 && i === 4,
+                               'bg-teal-700': i <= 4 && i === 5,
                                'bg-neutral-200': i > 4
                              }">
                         </div>
@@ -142,11 +142,11 @@
                         <div v-for="i in 5" :key="i"
                              class="w-2.5 h-2.5 rounded-full"
                              :class="{
-                               'bg-teal-200': i <= 4 && i === 1,
-                               'bg-teal-300': i <= 4 && i === 2,
-                               'bg-teal-400': i <= 4 && i === 3,
-                               'bg-teal-500': i <= 4 && i === 4,
-                               'bg-teal-600': i <= 4 && i === 5,
+                               'bg-teal-300': i <= 4 && i === 1,
+                               'bg-teal-400': i <= 4 && i === 2,
+                               'bg-teal-500': i <= 4 && i === 3,
+                               'bg-teal-600': i <= 4 && i === 4,
+                               'bg-teal-700': i <= 4 && i === 5,
                                'bg-neutral-200': i > 4
                              }">
                         </div>
@@ -166,12 +166,12 @@
                         <div v-for="i in 5" :key="i"
                              class="w-2.5 h-2.5 rounded-full"
                              :class="{
-                               'bg-teal-200': i <= 4 && i === 1,
-                               'bg-teal-300': i <= 4 && i === 2,
-                               'bg-teal-400': i <= 4 && i === 3,
-                               'bg-teal-500': i <= 4 && i === 4,
-                               'bg-teal-600': i <= 4 && i === 5,
-                               'bg-neutral-200': i > 4
+                               'bg-teal-300': i <= 3 && i === 1,
+                               'bg-teal-400': i <= 3 && i === 2,
+                               'bg-teal-500': i <= 3 && i === 3,
+                               'bg-teal-600': i <= 3 && i === 4,
+                               'bg-teal-700': i <= 3 && i === 5,
+                               'bg-neutral-200': i > 3
                              }">
                         </div>
                       </div>
@@ -184,11 +184,11 @@
                         <div v-for="i in 5" :key="i"
                              class="w-2.5 h-2.5 rounded-full"
                              :class="{
-                               'bg-teal-200': i <= 3 && i === 1,
-                               'bg-teal-300': i <= 3 && i === 2,
-                               'bg-teal-400': i <= 3 && i === 3,
-                               'bg-teal-500': i <= 3 && i === 4,
-                               'bg-teal-600': i <= 3 && i === 5,
+                               'bg-teal-300': i <= 3 && i === 1,
+                               'bg-teal-400': i <= 3 && i === 2,
+                               'bg-teal-500': i <= 3 && i === 3,
+                               'bg-teal-600': i <= 3 && i === 4,
+                               'bg-teal-700': i <= 3 && i === 5,
                                'bg-neutral-200': i > 3
                              }">
                         </div>
@@ -202,11 +202,11 @@
                         <div v-for="i in 5" :key="i"
                              class="w-2.5 h-2.5 rounded-full"
                              :class="{
-                               'bg-teal-200': i <= 4 && i === 1,
-                               'bg-teal-300': i <= 4 && i === 2,
-                               'bg-teal-400': i <= 4 && i === 3,
-                               'bg-teal-500': i <= 4 && i === 4,
-                               'bg-teal-600': i <= 4 && i === 5,
+                               'bg-teal-300': i <= 4 && i === 1,
+                               'bg-teal-400': i <= 4 && i === 2,
+                               'bg-teal-500': i <= 4 && i === 3,
+                               'bg-teal-600': i <= 4 && i === 4,
+                               'bg-teal-700': i <= 4 && i === 5,
                                'bg-neutral-200': i > 4
                              }">
                         </div>
@@ -226,11 +226,11 @@
                         <div v-for="i in 5" :key="i"
                              class="w-2.5 h-2.5 rounded-full"
                              :class="{
-                               'bg-teal-200': i <= 4 && i === 1,
-                               'bg-teal-300': i <= 4 && i === 2,
-                               'bg-teal-400': i <= 4 && i === 3,
-                               'bg-teal-500': i <= 4 && i === 4,
-                               'bg-teal-600': i <= 4 && i === 5,
+                               'bg-teal-300': i <= 4 && i === 1,
+                               'bg-teal-400': i <= 4 && i === 2,
+                               'bg-teal-500': i <= 4 && i === 3,
+                               'bg-teal-600': i <= 4 && i === 4,
+                               'bg-teal-700': i <= 4 && i === 5,
                                'bg-neutral-200': i > 4
                              }">
                         </div>
@@ -244,11 +244,11 @@
                         <div v-for="i in 5" :key="i"
                              class="w-2.5 h-2.5 rounded-full"
                              :class="{
-                               'bg-teal-200': i <= 3 && i === 1,
-                               'bg-teal-300': i <= 3 && i === 2,
-                               'bg-teal-400': i <= 3 && i === 3,
-                               'bg-teal-500': i <= 3 && i === 4,
-                               'bg-teal-600': i <= 3 && i === 5,
+                               'bg-teal-300': i <= 3 && i === 1,
+                               'bg-teal-400': i <= 3 && i === 2,
+                               'bg-teal-500': i <= 3 && i === 3,
+                               'bg-teal-600': i <= 3 && i === 4,
+                               'bg-teal-700': i <= 3 && i === 5,
                                'bg-neutral-200': i > 3
                              }">
                         </div>
@@ -262,11 +262,11 @@
                         <div v-for="i in 5" :key="i"
                              class="w-2.5 h-2.5 rounded-full"
                              :class="{
-                               'bg-teal-200': i <= 3 && i === 1,
-                               'bg-teal-300': i <= 3 && i === 2,
-                               'bg-teal-400': i <= 3 && i === 3,
-                               'bg-teal-500': i <= 3 && i === 4,
-                               'bg-teal-600': i <= 3 && i === 5,
+                               'bg-teal-300': i <= 3 && i === 1,
+                               'bg-teal-400': i <= 3 && i === 2,
+                               'bg-teal-500': i <= 3 && i === 3,
+                               'bg-teal-600': i <= 3 && i === 4,
+                               'bg-teal-700': i <= 3 && i === 5,
                                'bg-neutral-200': i > 3
                              }">
                         </div>
@@ -357,7 +357,7 @@
       </div>
 
       <!-- Fußzeile -->
-      <footer class="absolute bottom-4 w-full px-8 text-center">
+      <footer class="absolute bottom-6 w-full px-8 text-center">
         <p class="text-xs text-neutral-500">
           Besuchen Sie mein Webportfolio unter 
           <a href="https://jacobscr.github.io/" 
