@@ -105,7 +105,14 @@
                       <div class="flex gap-1.5">
                         <div v-for="i in 5" :key="i"
                              class="w-2.5 h-2.5 rounded-full"
-                             :class="i <= 5 ? 'bg-teal-500' : 'bg-neutral-200'">
+                             :class="{
+                               'bg-teal-200': i <= 4 && i === 1,
+                               'bg-teal-300': i <= 4 && i === 2,
+                               'bg-teal-400': i <= 4 && i === 3,
+                               'bg-teal-500': i <= 4 && i === 4,
+                               'bg-teal-600': i <= 4 && i === 5,
+                               'bg-neutral-200': i > 4
+                             }">
                         </div>
                       </div>
                     </div>
@@ -116,7 +123,14 @@
                       <div class="flex gap-1.5">
                         <div v-for="i in 5" :key="i"
                              class="w-2.5 h-2.5 rounded-full"
-                             :class="i <= 4 ? 'bg-teal-500' : 'bg-neutral-200'">
+                             :class="{
+                               'bg-teal-200': i <= 4 && i === 1,
+                               'bg-teal-300': i <= 4 && i === 2,
+                               'bg-teal-400': i <= 4 && i === 3,
+                               'bg-teal-500': i <= 4 && i === 4,
+                               'bg-teal-600': i <= 4 && i === 5,
+                               'bg-neutral-200': i > 4
+                             }">
                         </div>
                       </div>
                     </div>
@@ -127,7 +141,14 @@
                       <div class="flex gap-1.5">
                         <div v-for="i in 5" :key="i"
                              class="w-2.5 h-2.5 rounded-full"
-                             :class="i <= 4 ? 'bg-teal-500' : 'bg-neutral-200'">
+                             :class="{
+                               'bg-teal-200': i <= 4 && i === 1,
+                               'bg-teal-300': i <= 4 && i === 2,
+                               'bg-teal-400': i <= 4 && i === 3,
+                               'bg-teal-500': i <= 4 && i === 4,
+                               'bg-teal-600': i <= 4 && i === 5,
+                               'bg-neutral-200': i > 4
+                             }">
                         </div>
                       </div>
                     </div>
@@ -144,7 +165,14 @@
                       <div class="flex gap-1.5">
                         <div v-for="i in 5" :key="i"
                              class="w-2.5 h-2.5 rounded-full"
-                             :class="i <= 4 ? 'bg-teal-500' : 'bg-neutral-200'">
+                             :class="{
+                               'bg-teal-200': i <= 4 && i === 1,
+                               'bg-teal-300': i <= 4 && i === 2,
+                               'bg-teal-400': i <= 4 && i === 3,
+                               'bg-teal-500': i <= 4 && i === 4,
+                               'bg-teal-600': i <= 4 && i === 5,
+                               'bg-neutral-200': i > 4
+                             }">
                         </div>
                       </div>
                     </div>
@@ -155,7 +183,14 @@
                       <div class="flex gap-1.5">
                         <div v-for="i in 5" :key="i"
                              class="w-2.5 h-2.5 rounded-full"
-                             :class="i <= 3 ? 'bg-teal-500' : 'bg-neutral-200'">
+                             :class="{
+                               'bg-teal-200': i <= 3 && i === 1,
+                               'bg-teal-300': i <= 3 && i === 2,
+                               'bg-teal-400': i <= 3 && i === 3,
+                               'bg-teal-500': i <= 3 && i === 4,
+                               'bg-teal-600': i <= 3 && i === 5,
+                               'bg-neutral-200': i > 3
+                             }">
                         </div>
                       </div>
                     </div>
@@ -166,7 +201,14 @@
                       <div class="flex gap-1.5">
                         <div v-for="i in 5" :key="i"
                              class="w-2.5 h-2.5 rounded-full"
-                             :class="i <= 4 ? 'bg-teal-500' : 'bg-neutral-200'">
+                             :class="{
+                               'bg-teal-200': i <= 4 && i === 1,
+                               'bg-teal-300': i <= 4 && i === 2,
+                               'bg-teal-400': i <= 4 && i === 3,
+                               'bg-teal-500': i <= 4 && i === 4,
+                               'bg-teal-600': i <= 4 && i === 5,
+                               'bg-neutral-200': i > 4
+                             }">
                         </div>
                       </div>
                     </div>
@@ -183,7 +225,14 @@
                       <div class="flex gap-1.5">
                         <div v-for="i in 5" :key="i"
                              class="w-2.5 h-2.5 rounded-full"
-                             :class="i <= 5 ? 'bg-teal-500' : 'bg-neutral-200'">
+                             :class="{
+                               'bg-teal-200': i <= 4 && i === 1,
+                               'bg-teal-300': i <= 4 && i === 2,
+                               'bg-teal-400': i <= 4 && i === 3,
+                               'bg-teal-500': i <= 4 && i === 4,
+                               'bg-teal-600': i <= 4 && i === 5,
+                               'bg-neutral-200': i > 4
+                             }">
                         </div>
                       </div>
                     </div>
@@ -194,7 +243,14 @@
                       <div class="flex gap-1.5">
                         <div v-for="i in 5" :key="i"
                              class="w-2.5 h-2.5 rounded-full"
-                             :class="i <= 3 ? 'bg-teal-500' : 'bg-neutral-200'">
+                             :class="{
+                               'bg-teal-200': i <= 3 && i === 1,
+                               'bg-teal-300': i <= 3 && i === 2,
+                               'bg-teal-400': i <= 3 && i === 3,
+                               'bg-teal-500': i <= 3 && i === 4,
+                               'bg-teal-600': i <= 3 && i === 5,
+                               'bg-neutral-200': i > 3
+                             }">
                         </div>
                       </div>
                     </div>
@@ -205,7 +261,14 @@
                       <div class="flex gap-1.5">
                         <div v-for="i in 5" :key="i"
                              class="w-2.5 h-2.5 rounded-full"
-                             :class="i <= 3 ? 'bg-teal-500' : 'bg-neutral-200'">
+                             :class="{
+                               'bg-teal-200': i <= 3 && i === 1,
+                               'bg-teal-300': i <= 3 && i === 2,
+                               'bg-teal-400': i <= 3 && i === 3,
+                               'bg-teal-500': i <= 3 && i === 4,
+                               'bg-teal-600': i <= 3 && i === 5,
+                               'bg-neutral-200': i > 3
+                             }">
                         </div>
                       </div>
                     </div>
